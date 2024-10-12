@@ -12,104 +12,9 @@
             width: 100%;
             height: 100%;
             overflow-y: auto;
-            overflow-x: auto;
+            overflow-x: hidden;
             background-color: rgb(138, 43, 226);
         }
-        
-        /*
-        
-        .Header {
-  			position: relative;
-            width: 100%;
-            height: 240px;
-            display: flex;
-        }
-        #Header-Left {
-            position: relative;
-            width: 30%;
-            height: 100%;
-        }
-        #Header-Left #Top{
-            position: absolute;
-        	width: 100%;
-            min-width: 240px;
-        	height: 45%;
-        	z-index: 1;
-            background-color: rgb(138, 43, 226);
-            
-            border-left-color: rgb(32, 7, 50);
-            border-left-width: 8px;
-            border-left-style:groove;
-            border-top-color: rgb(32, 7, 50);
-            border-top-width:8px;
-            border-top-style: groove;
-            
-        }
-        #Header-Left #Bottom {
-            position: absolute;
-            top: 45%;
-            position: relative;
-            width: 100%;
-            height: 55%;
-        	background-color: rgb(176, 196, 222);
-            border-top-right-radius: 20px;
-            border-right-color: darkslateblue;
-            border-right-width: 2px;
-            border-right-style: solid;
-            border-bottom-width: 5px;
-            background-color: rgb(176, 196, 222);
-            border-bottom-style: solid;
-            z-index: 2;
-        }
-        #Separate-Border {
-            position: relative;
-            background-color: darkred;
-            width: 100%;
-            height: 40px;
-            border-top-right-radius: 20px;
-            border-top-color: darkslategray;
-            border-top-width: 8px;
-            border-top-style: groove;
-            border-right-color: darkslategray;
-            border-right-width: 4px;
-            border-right-style: solid;
-            border-bottom-color: darkslategrey;
-            border-bottom-style: groove;
-            border-bottom-width: 4px;
-        }
-        #Header-Right {
-            position: relative;
-            width: 70%;
-            height: 100%;
-        }
-        #Header-Right #Top {
-            position: relative;
-        	width: 100%;
-        	height: 56%;
-            background-color: rgb(138, 43, 226);
-            border-bottom-width: 8px;
-            border-bottom-color: rgb(32, 7, 50);
-            border-bottom-style: ridge;
-        }
-        .MainMenu{
-        	position: relative;
-            background-color: rgb(35, 70, 141);
-            width: 100%;
-            height: 44%;
-        }
-        .MainMenu menu {
-            position: absolute;
-            display: flex;
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            list-style-type: none;
-            padding-left: 6px;
-        }
-
-        
-        
-        */
         .Header-Title {
         	position: relative;
         	width: 100%;
@@ -177,7 +82,6 @@
             font-size: 0.6cm;
             text-decoration: none;
         }
-
         
         #Contents {
             top: 0;
