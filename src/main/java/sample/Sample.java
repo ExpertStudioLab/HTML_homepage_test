@@ -42,7 +42,7 @@ public class Sample extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		ServletContext context = getServletContext();
-		RequestDispatcher dispatcher = context.getRequestDispatcher( "/day2/sample4.jsp" );
+		RequestDispatcher dispatcher = context.getRequestDispatcher( "/day2/home.jsp" );
 		dispatcher.forward( request, response );
 	}
 
