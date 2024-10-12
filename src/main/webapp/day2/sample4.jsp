@@ -48,13 +48,13 @@
             position: relative;
             width: 100%;
             height: 55%;
-        	background-color: rgb(176, 196, 222);
+            background-color: rgb(176, 196, 222);
             border-top-right-radius: 20px;
             border-right-color: darkslateblue;
             border-right-width: 2px;
             border-right-style: solid;
             border-bottom-width: 5px;
-            background-color: rgb(176, 196, 222);
+
             border-bottom-style: solid;
             z-index: 2;
         }

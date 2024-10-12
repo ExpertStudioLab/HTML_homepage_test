@@ -129,9 +129,33 @@
         
         
         */
+        .Header-Title {
+        	position: relative;
+        	width: 100%;
+        	height: 100px;
+        	background-color: rgb(138, 43, 226);
+            border-color: rgb(32, 7, 50);
+            border-width: 8px;
+            border-style: groove;
+        }
+        .Header-Menu {
+        	position: relative;
+        	width: 100%;
+        	height: 60px;
+            display: flex;
+            background-color: chartreuse;
+            
+        }
+        .Header-Object {
+            position: absolute;
+            bottom: 0;
+            width: 30%;
+            height: 90px;
+            background-color: rgb(138, 151, 168);
+            z-index: 1;
+        }
         
-        
-        #Contents{
+        #Contents {
             top: 4px;
             position: relative;
             background-color: lavender;
@@ -178,8 +202,8 @@
             height: 280px;
         }
         h1 {
+            line-height: 30px;
             position: relative;
-            top: 0;
             margin-left: 0.8cm;
         }
 
@@ -218,17 +242,15 @@
     		<h1><font size="7">VirtualExtender</font></h1>
 		</div>
 		<div class="Header-Menu">
-			 <div id="Bottom">
-        		 <div id="Separate-Border"></div>
-			 </div>
-                <div class="MainMenu">
-                    <menu>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Total View</a></li>
-                        <li><a href="">Development</a></li>
-                        <li><a href="sample2.jsp">Utilities</a></li>
-                    </menu>
-                </div>        		
+            <div class="Header-Object"></div>
+             <div class="MainMenu">
+                 <menu>
+                     <li><a href="">Products</a></li>
+                     <li><a href="">Total View</a></li>
+                     <li><a href="">Development</a></li>
+                     <li><a href="sample2.jsp">Utilities</a></li>
+                 </menu>
+             </div>        		
 		</div>
 
     	<div id="Contents" >
