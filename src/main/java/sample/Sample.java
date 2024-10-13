@@ -31,7 +31,7 @@ public class Sample extends HttpServlet {
 		// TODO Auto-generated method stub
 	
 		ServletContext context = getServletContext();
-		RequestDispatcher dispatcher = context.getRequestDispatcher( "/day2/home.jsp" );
+		RequestDispatcher dispatcher = context.getRequestDispatcher( "/day2/total_view.jsp" );
 		dispatcher.forward( request, response );
 	}
 
@@ -40,10 +40,10 @@ public class Sample extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+/*		doGet(request, response);
 		ServletContext context = getServletContext();
 		RequestDispatcher dispatcher = context.getRequestDispatcher( "/day2/home.jsp" );
 		dispatcher.forward( request, response );
-	}
+*/	}
 
 }

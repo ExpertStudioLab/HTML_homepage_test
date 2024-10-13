@@ -76,7 +76,6 @@
             font-size: 0.6cm;
             text-decoration: none;
         }
-        
         #Contents {
             top: 0;
             position: relative;
@@ -93,9 +92,13 @@
             width: 80%;
             background-color: burlywood;
         }
+        h1 {
+            line-height: 30px;
+            position: relative;
+            margin-left: 0.8cm;
+        }
         #Section1 {
             position: relative;
-            display: flex;
             top: 15px;
             left: 5%;
             padding-top: 20px;
@@ -105,55 +108,78 @@
             width: 80%;
             background-color: snow;
         }
-        #Section1 #Text {
+        #White-Board {
             position: relative;
-            width: 60%;
-            height: auto;
-            margin-bottom: 30px;
-        }
-        #Section1 div:last-of-type {
-            position: relative;
-            width: 40%;
-            height: auto;
-            text-align: right;
-        }
-        #Section1 div img {
-            position: relative;
-            width: 80%;
-            height: 280px;
-        }
-        h1 {
-            line-height: 30px;
-            position: relative;
-            margin-left: 0.8cm;
-        }
-
-        h2 {
-            font-size: 1cm;
-        }
-        p {
-        	font-size: 0.5cm;
-            line-height: 0.9cm;
-        }
-        
-        #Footer {
-            position: relative;
-            bottom: 0;
-            left: 0;
-            display: fixed;
-            height: 80px;
             width: 100%;
-            background-color: azure; 
+            height: 270px;
+            border: 3px, solid, black;
         }
-    </style>
-    
+        #White-Board #Bottom{
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #HTML {
+            position: relative;
+            width: 30%;
+            height: 120px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+            text-align: center;
+        }
+        #Server {
+            position: relative;
+            display: inline-block;
+            width: 30%;
+            height: 120px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            margin-left: 5%;
+            text-align: center;
+        }
+        #Database {
+            position: relative;
+            display: inline-block;
+            width: 30%;
+            height: 120px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            margin-right: 5%;
+            text-align: center;
+        }
+        .Field {
+            display: block;
+            font-size: 0.7cm;
+            padding-top: 1cm;
+        }
+        span {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px, solid, #ccc;
+            padding: 10px;
+            z-index: 1;
+        }
+	</style>
+    <script>
+        var html_field = "HTML";
+        var server = "Server";
+        var database = "Database";
+        function showPopup( Field ) {
+            document.getElementById( Field + "Popup" ).style.display = "block";
+        }
+        function hidePopup( Field ) {
+            document.getElementById( Field + "Popup" ).style.display = "none";
+        }
+    </script>
 
-    
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>VirtualExtender-Home Page-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Total View</title>
 </head>
-
 <body>
     <div class="BackGround" id="focus" tabindex="0">    <!-----------------------------背景--------------------------------------------- -->
             <script>
@@ -174,22 +200,37 @@
                 <li><a href="">Products</a></li>
                 <li><a href=<%= total_view_path %>>Total View</a></li>
                 <li><a href="">Development</a></li>
-                <li><a href="sample2.jsp">Utilities</a></li>
+                <li><a href="day2/sample2.jsp">Utilities</a></li>
             </menu>        		
 		</div>
 
     	<div id="Contents" >
         	<div id="Contents-Area">
-            	<div id="Section1">
-                	<div id="Text">
-                    	<h2>理解から需要へ<small>～新たな需要の開拓～</small></h2>
-                    	<h3>変化する価値基準</h3>
-                        <jsp:include page="section1.jsp" />
-                	</div>
-                	<div>
-                    	<img src="${ pageContext.request.contextPath }/day2/理解から需要へ.png" id="Img1" width="300px"/>
-                	</div>
-            	</div>
+                <div id="Section1">
+                    <h3>運営方針</h3>
+                    <div id="White-Board">
+                        <div id="HTML" onmouseover="showPopup( html_field )" onmouseout="hidePopup( html_field )">
+                            <a class="Field">ホームページ開発</a>
+                            <span id="HTMLPopup">
+                                HTMLの修正・更新を簡略化する
+                            </span>
+                        </div>
+                        <div id="Bottom">
+                            <div id="Server" onmouseover="showPopup( server )" onmouseout="hidePopup( server )">
+                                <a class="Field">サーバー構築</a>
+                                <span id="ServerPopup">
+                                    高額なサーバーの導入支援
+                                </span>
+                            </div>
+                            <div id="Database" onmouseover="showPopup( database )" onmouseout="hidePopup( database )">
+                                <a class="Field">データ解析</a>
+                                <span id="DatabasePopup">
+                                    再利用可能なデータ形式への変換とデータの利用
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         	</div>
 	    </div>
 	    <div id="Footer"></div>
